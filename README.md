@@ -1,8 +1,8 @@
-# NLP-Fashion-Insights
+# NLP-Fashion-Insights 🔆🔆🔆
 
 A text mining project that applies **TF-IDF** and **NMF** to fashion product descriptions in order to uncover the underlying style themes most relevant to the market. The goal is to help design teams better align new product ideas with customer demand.
 
-## Project Background
+## Project Background 
 
 In e-commerce, the *sample-to-product ratio* is often low. Designers may create many prototypes, but only a small fraction make it into production because creative intuition does not always match customer preferences.  
 This project explores how natural language processing can support decision-making by extracting themes directly from product descriptions, providing a data-driven view of what customers value.
@@ -30,6 +30,12 @@ A public dataset is used here for demonstration purposes, but the pipeline refle
 - matplotlib
 
 ## Repository Structure
+nlp-fashion-insights/
+│── fashion_analyzer.py       # Main analysis script
+│── fashion_dataset.csv       # Example dataset
+│── results/                  # Sample outputs
+│── requirements.txt
+└── README.md
 
 ## How to Run
 
