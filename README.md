@@ -2,45 +2,43 @@
 
 A text mining project that applies **TF-IDF** and **NMF** to fashion product descriptions in order to uncover the underlying style themes most relevant to the market. The goal is to help design teams better align new product ideas with customer demand.
 
-## Project Background 
+## 📖 Project Background 
 
 In e-commerce, the *sample-to-product ratio* is often low. Designers may create many prototypes, but only a small fraction make it into production because creative intuition does not always match customer preferences.  
 This project explores how natural language processing can support decision-making by extracting themes directly from product descriptions, providing a data-driven view of what customers value.
 
 A public dataset is used here for demonstration purposes, but the pipeline reflects what could be applied in a real business setting.
 
-## Methods
+## ⚙️ Methods
 
 - **Text Preprocessing**: cleaning, tokenization, stopword removal, and n-grams  
 - **Feature Extraction**: TF-IDF to quantify term importance across thousands of descriptions  
 - **Theme Discovery**: NMF to group terms into interpretable style topics  
 - **Evaluation**: testing different numbers of themes and refining TF-IDF thresholds
 
-## Key Results
+## 📊 Key Results
 
 - Identified **8 coherent style themes**, e.g. casual basics, formal wear, athleisure, vintage  
 - Represented each product as a weighted mix of discovered themes  
 - Observed that theme quality improved with n-gram inclusion and tuned parameters
 
-## Tech Stack
+## 🛠 Tech Stack
 
 - Python 3.8+  
 - scikit-learn  
 - pandas / numpy  
 - matplotlib
 
-## Repository Structure
+## 📂 Repository Structure
+
+```text
 nlp-fashion-insights/
-│── fashion_analyzer.py       # Main analysis script
-│── fashion_dataset.csv       # Example dataset
-│── results/                  # Sample outputs
-│── requirements.txt
+├── fashion_analyzer.py          # Main analysis script
+├── results/                     # Sample outputs
+│   ├── themes_top_words.csv     # Top terms per theme
+│   └── product_topics.csv       # Product-to-theme weights
+├── requirements.txt
 └── README.md
+```
 
-## How to Run
-
-```bash
-git clone https://github.com/yourusername/nlp-fashion-insights.git
-cd nlp-fashion-insights
-pip install -r requirements.txt
-python fashion_analyzer.py
+If you have any question, please feel free to contact me: carinamoshu@gmail.com ヾ(≧∇≦*)ヾ
